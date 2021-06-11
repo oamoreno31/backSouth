@@ -24,7 +24,8 @@ public class TioController {
     @GetMapping("/lista")
     public ResponseEntity<List<Tio>> lista(){
         List<Tio> list = tioService.findAll();
-        return new ResponseEntity(list, HttpStatus.OK);
+        // return new ResponseEntity(list, HttpStatus.OK);
+        return "Works"
     }
 
     @GetMapping("/detalle/{id}")
